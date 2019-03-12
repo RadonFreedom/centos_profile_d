@@ -1,0 +1,11 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="JSP File.jsp" reformat="true" live-template-enabled="true" />
+      <template name="Servlet.java" reformat="true" live-template-enabled="true" />
+    </default_templates>
+    <includes_templates>
+      <template name="File Header.java" reformat="true" live-template-enabled="true" enabled="true" />
+    </includes_templates>
+  </component>
+</application>

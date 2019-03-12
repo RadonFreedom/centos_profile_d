@@ -1,0 +1,23 @@
+<templateSet group="output">
+  <template name="outv" value="out.println(&quot;$EXPR_COPY$ : &quot; + $EXPR$ + &quot;&lt;br&gt;&quot;);" description="Prints a value to out" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="out" value="out.println($END$ + &quot;&lt;br&gt;&quot;);" description="Prints a string to out" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutm" value="System.out.println(this.getClass().getName() + &quot;#$METHOD_NAME$&quot;$END$);" description="Prints current class and method names to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="soutv" value="System.out.println(&quot;$EXPR_COPY$: &quot; + $EXPR$);" description="Prints a value to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+</templateSet>

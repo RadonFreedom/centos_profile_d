@@ -1,0 +1,7 @@
+<templateSet group="input">
+  <template name="scanner" value="Scanner in = new Scanner(System.in);&#10;System.out.println(&quot;&quot;);&#10;  int a = in.nextInt();&#10;  double b = in.nextDouble();&#10;  String string = in.next();&#10;String string = in.nextLine();" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

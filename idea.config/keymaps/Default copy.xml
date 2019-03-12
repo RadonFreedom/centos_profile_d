@@ -1,0 +1,13 @@
+<keymap version="1" name="Default copy" parent="$default">
+  <action id="CopyPaths">
+    <keyboard-shortcut first-keystroke="shift ctrl alt c" />
+  </action>
+  <action id="CopyReference">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="DatabaseView.CopyDdlAction" />
+  <action id="EditorSplitLine" />
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
+</keymap>

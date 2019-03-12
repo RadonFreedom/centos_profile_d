@@ -1,0 +1,66 @@
+<templateSet group="SQL">
+  <template name="cret" value="create table $table$ (&#10;  $col$ $type$ $null$$END$&#10;);" description="new table definition" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="" defaultValue="&quot;new_table&quot;" alwaysStopAt="true" />
+    <variable name="col" expression="" defaultValue="&quot;col&quot;" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
+    <variable name="null" expression="" defaultValue="&quot;not null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="sht" value="show create table $table$$END$;" description="show create table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="addfor" value="alter table $table1$&#10;  add foreign key fk_$table1$_$END$ ($col$) references $table2$ ($col$);" description="new foreign key definition with alter table" toReformat="true" toShortenFQNames="false">
+    <variable name="table1" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="table2" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="col" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="del" value="delete&#10;from $table_name$&#10;where $col$ = $value$;" description="delete row(s) in a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table_name" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="col" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="for" value="foreign key fk_$END$_ ($col$) references $table2$ ($col$);" description="new foreign key definition in a new table definition" toReformat="true" toShortenFQNames="false">
+    <variable name="table2" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="col" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="shv" value="show create view $table$$END$;" description="show create view" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="crev" value="create view $view_name$ as&#10;select $col$ from $table$$END$;" description="select all rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="view_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="col" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="shvs" value="show table status where Comment = 'view';" description="show all views" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="crep" value="create procedure $name$(&#10;$para$&#10;)&#10;  begin&#10;    $END$&#10;  end;" description="new procedure definition" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="para" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+</templateSet>

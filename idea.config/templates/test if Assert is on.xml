@@ -1,0 +1,7 @@
+<templateSet group="test if Assert is on">
+  <template name="asser" value="boolean assertStatus = false;&#10;assert assertStatus = true;&#10;System.out.println(&quot;assertStatus = &quot; + assertStatus);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

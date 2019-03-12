@@ -1,0 +1,13 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="klib" type="ARCHIVE" />
+      <mapping pattern="BeerSong" type="CLASS" />
+      <mapping pattern="asdas" type="PLAIN_TEXT" />
+      <mapping pattern="asd" type="PLAIN_TEXT" />
+      <mapping ext="properties" type="PLAIN_TEXT" />
+      <removed_mapping ext="properties" approved="true" type="Properties" />
+      <removed_mapping ext="properties" approved="true" type="Properties" />
+    </extensionMap>
+  </component>
+</application>
